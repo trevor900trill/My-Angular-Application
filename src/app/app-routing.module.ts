@@ -2,9 +2,13 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { VideosComponent } from './videos.component';
 import { MyPlaylistComponent } from './myplaylist.component';
+import { SignUpComponent } from './signup.component';
+import { ConfirmComponent } from './confirm.component';
 const routes: Routes = [
   { path:'videos' , component: VideosComponent },
   { path:'myplaylistgo' , component : MyPlaylistComponent },
+  { path:'signup' , component : SignUpComponent },
+  { path: 'confirm' , component : ConfirmComponent },
 ];
 
 @NgModule({

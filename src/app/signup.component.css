@@ -1,0 +1,29 @@
+.signuppage{
+  position:fixed;
+  background-color: #46484c;
+  width: 100%;
+  height : 100%;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  padding:0px;
+  margin:0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.signuppagecont{
+  display: block;
+  background-color: #46484c;
+}
+.signuplogo{
+  font-family: 'Tangerine', cursive;
+  color:#ff8011;
+  font-size: 55px;
+}
+.signuplogobox{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

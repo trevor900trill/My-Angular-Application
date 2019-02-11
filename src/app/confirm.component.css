@@ -1,0 +1,28 @@
+.confirmationpage{
+  position: fixed;
+  top: 0px;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  background-color: #46484c;
+  width: 100%;
+  height: 100%;
+}
+.confirmlogo{
+  font-family: 'Tangerine', cursive;
+  color:#ff8011;
+  font-size: 55px;
+}
+.confirmlogobox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #46484c;
+}
+.confirmtextblock{
+  display: block;
+  background-color: #46484c;
+}
