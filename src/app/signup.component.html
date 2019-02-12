@@ -5,24 +5,28 @@
       </section>
       <div class="form-group">
           <label style="color:#ff8011" for="usr">email:</label>
-          <input required="required" name="useremail" type="text" class="form-control" >
+          <input (keyup)="signupemail($event)" =required="required" name="useremail" type="text" class="form-control" >
       </div>
       <div class="form-group">
           <label style="color:#ff8011" for="usr">full name:</label>
-          <input required="required" name="useremail" type="text" class="form-control" >
+          <input (keyup)="signupfullname($event)" required="required" name="useremail" type="text" class="form-control" >
+      </div>
+      <div class="form-group">
+          <label style="color:#ff8011" for="usr">full name:</label>
+          <input (keyup)="signupnickname($event)" required="required" name="useremail" type="text" class="form-control" >
       </div>
       <div class="form-group">
           <label style="color:#ff8011" for="usr">phone number:</label>
-          <input required="required" name="useremail" type="text" class="form-control" >
+          <input  (keyup)="signupphone($event)"  required="required" name="useremail" type="text" class="form-control" >
       </div>
       <div class="form-group">
           <label style="color:#ff8011"for="pwd">Password:</label>
-          <input required="required" name="userpass" type="password" class="form-control" >
+          <input (keyup)="signuppassword($event)"  required="required" name="userpass" type="password" class="form-control" >
       </div>
       <div class="form-group">
           <label style="color:#ff8011"for="pwd">Repeat Password:</label>
-          <input required="required" name="userpass" type="password" class="form-control" >
+          <input (keyup)="signuprepeatpass($event)"  required="required" name="userpass" type="password" class="form-control" >
       </div>
-      <button routerLink ='/confirm' id="test-Button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Sign Up</button>
+      <button  (keyup)="fullsignup"  routerLink ='/confirm' id="test-Button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Sign Up</button>
     </div>
 </div>

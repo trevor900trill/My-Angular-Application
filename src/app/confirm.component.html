@@ -1,8 +1,12 @@
 <div class="confirmationpage">
-  <div class="confirmlogobox">
-      <h1 class="confirmlogo">{{confirmlogots}}</h1>
-    </div>
-    <div class="confirmtextblock">
-
-    </div>
+  <div class="confirmtextblock">
+      <div class="confirmlogobox">
+            <h1 class="confirmlogo">{{confirmlogots}}</h1>
+      </div>
+      <div class="form-group">
+            <label style="color:#ff8011" for="usr">verfication code:</label>
+            <input (keyup)="confirmationemail($event)" required="required" name="useremail" type="text" class="form-control" >
+      </div>
+      <button routerLink ='/videos'class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Confirm</button>
+  </div>
 </div>

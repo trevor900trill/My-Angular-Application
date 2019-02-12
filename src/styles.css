@@ -230,11 +230,18 @@ li{
   display: flex;
 
 }
+.video:active{
+  background-color: blue;
+ }
+.video:hover{
+  transform: scale(0.9);
+}
 .video{
   background-color: aqua;
   min-width: 320px;
   height: 250px;
   margin-left: 20px;
+  transition: transform .2s;
 }
 .labelsidescroll{
   margin-left:20px;

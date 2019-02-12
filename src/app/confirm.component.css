@@ -18,6 +18,8 @@
 }
 .confirmlogobox{
   display: flex;
+  margin-top:20px;
+  margin-bottom : 100px;
   align-items: center;
   justify-content: center;
   background-color: #46484c;
