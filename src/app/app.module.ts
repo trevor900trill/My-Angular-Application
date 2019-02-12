@@ -6,7 +6,7 @@ import { VideosComponent } from './videos.component';
 import { MyPlaylistComponent } from './myplaylist.component';
 import { SignUpComponent } from './signup.component';
 import { ConfirmComponent } from './confirm.component';
-import { HttpClientModule } from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
