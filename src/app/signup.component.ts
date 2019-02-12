@@ -1,5 +1,8 @@
 import { Component } from "@angular/core";
-
+import { HttpClient ,HttpParams ,HttpHeaders} from "@angular/common/http";
+import { Observable, throwError } from 'rxjs';
+import { catchError, retry } from 'rxjs/operators'
+import { Post } from "./signup";
 @Component({
     selector : 'sign-up',
     templateUrl : "./signup.component.html",
@@ -11,30 +14,43 @@ export class SignUpComponent {
   public fullname:String;
   public nickname:String;
   public phone:String;
-  public password:String;
-  public repeatpass:String;
-  constructor(){
+  private password:String;
+  private repeatpass:String;
+  public newpost:Observable<any>;
+  constructor(private http: HttpClient){
 
   }
-  public signupemail($event){
+  private signupemail($event){
     this.email = $event.target.value;
   }
-  public signupfullname($event){
+  private signupfullname($event){
     this.fullname = $event.target.value;
   }
-  public signupnickname($event){
+  private signupnickname($event){
     this.nickname = $event.target.value;
   }
-  public signupphone($event){
+  private signupphone($event){
     this.phone = $event.target.value;
   }
-  public signuppassword($event){
+  private signuppassword($event){
     this.password = $event.target.value;
   }
-  public signuprepeatpass($event){
+  private signuprepeatpass($event){
     this.repeatpass = $event.target.value;
   }
   public fullsignup(){
-    
+      const info: Post = {
+        email: this.email,
+        fullname:this.fullname,
+        nickname:this.nickname,
+        phone:this.phone,
+        password:this.password,
+        repeatpass:this.repeatpass,
+      }
+      this.newpost = this.http.post<Post>('http://20.20.20.246:8080/infinitesignup', info);
+      console.log(this.newpost);
+
   }
+
+
 }
