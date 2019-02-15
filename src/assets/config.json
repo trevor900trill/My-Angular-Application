@@ -1,4 +1,8 @@
 {
-  "hero": "api/heroes",
-  "test": "assets/textfile.txt"
+  "email": "String",
+  "fullname": "String",
+  "nickname": "String",
+  "phone": "String",
+  "password": "String",
+  "repeatpass": "String"
 }

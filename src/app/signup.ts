@@ -6,7 +6,3 @@ export interface Post{
   password:String,
   repeatpass:String,
 }
-<<<<<<< HEAD
- 
-=======
->>>>>>> signupbranch

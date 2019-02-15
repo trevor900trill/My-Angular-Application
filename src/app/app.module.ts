@@ -7,6 +7,7 @@ import { MyPlaylistComponent } from './myplaylist.component';
 import { SignUpComponent } from './signup.component';
 import { ConfirmComponent } from './confirm.component';
 import { HttpClientModule } from '@angular/common/http';
+import { SignupService } from './signup.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,7 +21,9 @@ import { HttpClientModule } from '@angular/common/http';
     HttpClientModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [
+    SignupService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
