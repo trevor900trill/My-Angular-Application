@@ -17,6 +17,8 @@ export class SignUpComponent {
   public phone:String;
   private password:String;
   private repeatpass:String;
+  public in;
+  public err;
   constructor(private sig : SignupService){
 
   }
@@ -48,8 +50,11 @@ export class SignUpComponent {
       repeatpass: this.repeatpass
     }
       this.sig.getPost(infop)
-      .subscribe(info => console.log(info));
-
+      .subscribe((info) => this.in = info,
+                  error => this.err = error,
+                );
+      console.log(this.in);
+      console.log(this.err)
       //this.newpost = this.http.post<Post>('http://20.20.20.246:8080/infinitesignup', info);
       //console.log(this.newpost);
 
