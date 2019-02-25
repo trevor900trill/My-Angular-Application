@@ -8,6 +8,7 @@ import { SignUpComponent } from './signup.component';
 import { ConfirmComponent } from './confirm.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SignupService } from './signup.service';
+import { ConfirmService } from './confirm.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +23,8 @@ import { SignupService } from './signup.service';
     AppRoutingModule
   ],
   providers: [
-    SignupService
+    SignupService,
+    ConfirmService
   ],
   bootstrap: [AppComponent]
 })

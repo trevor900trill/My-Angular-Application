@@ -97,6 +97,8 @@ export class SignUpComponent {
                         //now we handle in the verification page;
                         //for now use local storage and session storage
                         sessionStorage.setItem('key', data.code);
+                        //i'm not sure why i had to use the toString() method but it works so..
+                        sessionStorage.setItem('id', infop.email.toString());
                         this.errorcomponent = "";
                       }
                     },

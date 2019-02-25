@@ -17,6 +17,7 @@ export class SignupService{
               "Access-Control-Allow-Origin" : "*"
            })
        };
+       //add retry and catch errors here
       return this.http.post<any>(this.url+'/infinitesignup',poster,httpOptions)
     }
 
