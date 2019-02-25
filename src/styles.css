@@ -254,6 +254,12 @@ li{
   font-size: 20px;
   color: #ff8011;
 }
+.errorbox{
+  background-color: inherit;
+}
+.errortext{
+  color: red;
+}
 @keyframes animateionsidebar {
   from{left:-300px;}
   to{left: 0px;}

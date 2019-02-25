@@ -9,18 +9,25 @@ import { Component } from "@angular/core";
 export class ConfirmComponent {
   public confirmlogots:String = "Confirm you're email address";
   public confirmationtext:String;
+  public errorcomponent:String;
   constructor(){
 
   }
   public confirmationemail($event){
     this.confirmationtext = $event.target.value;
-    if(this.confirmationtext === "")
+  }
+  public confirmbtn(){
+    if(!this.confirmationtext)
     {
-      console.log("nothing is inputed do not accept")
+      this.errorcomponent = "Error: fill in the required code";
     }
-    else if(this.confirmationtext !== "")
+    else
     {
       console.log("something has been inputed is it true? " + this.confirmationtext);
+      this.errorcomponent = "";
     }
+  }
+  public resend(){
+    alert("working well");
   }
 }

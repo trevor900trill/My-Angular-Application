@@ -41,58 +41,73 @@ export class SignUpComponent {
     this.repeatpass = $event.target.value;
   }
   public fullsignup(){
-    const infop = {
-      email: this.email,
-      fullname: this.fullname,
-      nickname: this.nickname,
-      phone: this.phone,
-      password: this.password,
-      repeatpass: this.repeatpass
+    if(!this.email || !this.fullname || !this.nickname || !this.phone || !this.password || !this.repeatpass)
+    {
+      //some of the fields are empty do something
+       this.errorcomponent = "Error: fill in all the required fields";
     }
+    else
+    {
+      //check that the repeat password is the same as the Password
+      if(this.password !== this.repeatpass)
+      {
+        //the passwords are different
+        this.errorcomponent = "Error: you're repeated password is different from you're password";
+      }
+      else
+      {
+        const infop = {
+          email: this.email,
+          fullname: this.fullname,
+          nickname: this.nickname,
+          phone: this.phone,
+          password: this.password,
+          repeatpass: this.repeatpass
+        }
 
-      this.sig.getPost(infop)
-      .subscribe((data) =>{
-                  if(data.code === "not unique")
-                  {
-                    //block the url
-                    this.router.navigate(['/signup']);
-                    this.errorcomponent = "Error: an email like that one already exists";
-                  }
-                  else if(data.code === "usernamenot")
-                  {
-                    this.router.navigate(['/signup']);
-                    this.errorcomponent = "Error: username already exists";
-                  }
-                  else if(data.code === "error")
-                  {
-                    this.errorcomponent = "Error: something went wrong the code was not sent try agin later";
-                    this.router.navigate(['/signup']);
-                  }
-                  else if(data.code === "errordata")
-                  {
-                    this.errorcomponent = "Error: something went wrong you're information was not saved try agin later";
-                    this.router.navigate(['/signup']);
-                  }
-                  else
-                  {
-                    this.router.navigate(['/confirm']);
-                    //send this to a local storage or cookies
-                    //TO DO ENCRYPTION
-                    //document.cookie = "code="+data.code
-                    //now we handle in the verification page;
-                    //for now use local storage and session storage
-                    sessionStorage.setItem('key', data.code);
-                    this.errorcomponent = "";
-                  }
-                },
-                (error) =>{
-                  console.log("error event");
-                  //block link
-                  this.router.navigate(['/']);
-                  alert("we are experiencing technical difficlties please try again in a bit");
-                }
-              );
-      //this.newpost = this.http.post<Post>('http://20.20.20.246:8080/infinitesignup', info);
-      //console.log(this.newpost);
+          this.sig.getPost(infop)
+          .subscribe((data) =>{
+                      if(data.code === "not unique")
+                      {
+                        //block the url
+                        this.router.navigate(['/signup']);
+                        this.errorcomponent = "Error: an email like that one already exists";
+                      }
+                      else if(data.code === "usernamenot")
+                      {
+                        this.router.navigate(['/signup']);
+                        this.errorcomponent = "Error: username already exists";
+                      }
+                      else if(data.code === "error")
+                      {
+                        this.errorcomponent = "Error: something went wrong the code was not sent try agin later";
+                        this.router.navigate(['/signup']);
+                      }
+                      else if(data.code === "errordata")
+                      {
+                        this.errorcomponent = "Error: something went wrong you're information was not saved try agin later";
+                        this.router.navigate(['/signup']);
+                      }
+                      else
+                      {
+                        this.router.navigate(['/confirm']);
+                        //send this to a local storage or cookies
+                        //TO DO ENCRYPTION
+                        //document.cookie = "code="+data.code
+                        //now we handle in the verification page;
+                        //for now use local storage and session storage
+                        sessionStorage.setItem('key', data.code);
+                        this.errorcomponent = "";
+                      }
+                    },
+                    (error) =>{
+                      console.log("error event");
+                      //block link
+                      this.router.navigate(['/']);
+                      alert("we are experiencing technical difficlties please try again in a bit");
+                    }
+                  );
+      }
+    }
   }
 }
