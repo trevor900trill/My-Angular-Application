@@ -7,6 +7,12 @@
 li{
   list-style-type: none;
 }
+.introductorybtns{
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .navbar{
   width:100%;
   display:flex;

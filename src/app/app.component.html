@@ -12,8 +12,10 @@
               <label style="color:#ff8011"for="pwd">Password:</label>
               <input  (keyup)="password($event)" id="fullpassword" required="required" name="userpass" type="password" class="form-control" id="pwd">
           </div>
-          <button routerLink ='/videos'(click)="login()" id="test-Button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Log In</button>
-          <button routerLink ='/signup' id="test-Button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Sign Up</button>
+          <div class="introductorybtns">
+            <button routerLink ='/videos' (click)="login()" id="log-Button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Log In</button>
+            <button routerLink ='/signup' id="signup-Button" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Sign Up</button>
+          </div>
   </ul>
 </div>
 <router-outlet></router-outlet>

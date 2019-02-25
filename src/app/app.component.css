@@ -13,3 +13,11 @@
   height: 100%;
   background-color: #46484c;
 }
+#signup-Button{
+  color: #ff8011;
+  margin-left: 10px;
+}
+#log-Button{
+  color: #ff8011;
+  margin-right: 10px;
+}
