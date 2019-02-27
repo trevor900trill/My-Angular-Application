@@ -13,6 +13,14 @@ li{
   justify-content: center;
   align-items: center;
 }
+.successtext{
+  color : green;
+  font-size: 18px;
+}
+.attemps{
+  color:#ff8011;
+  font-size: 18px;
+}
 .navbar{
   width:100%;
   display:flex;

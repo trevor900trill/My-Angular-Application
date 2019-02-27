@@ -9,6 +9,10 @@ import { ConfirmComponent } from './confirm.component';
 import { HttpClientModule } from '@angular/common/http';
 import { SignupService } from './signup.service';
 import { ConfirmService } from './confirm.service';
+import { Adress } from './ip.service';
+import { ResendService } from './resend.service';
+import { DeletionService } from './deletion.service';
+import { LoginService } from './login.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +28,11 @@ import { ConfirmService } from './confirm.service';
   ],
   providers: [
     SignupService,
-    ConfirmService
+    ConfirmService,
+    Adress,
+    ResendService,
+    DeletionService,
+    LoginService,
   ],
   bootstrap: [AppComponent]
 })

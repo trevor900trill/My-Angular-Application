@@ -6,13 +6,15 @@
 
       <div class="form-group">
             <div class="errorbox">
+                <p class="attemps">Attemps : {{invalidcount}}</p>
                 <p class="errortext">{{errorcomponent}}</p>
+                <p class="successtext">{{successcomponent}}</p>
             </div>
             <label style="color:#ff8011" for="usr">verfication code:</label>
             <input (keyup)="confirmationemail($event)" required="required" name="useremail" type="text" class="form-control" >
       </div>
       <div class="introductorybtns">
-        <button (click)="confirmbtn()" id="confirmbtnstyle" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Confirm</button>
+        <button *ngIf="render === true " (click)="confirmbtn()" id="confirmbtnstyle" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Confirm</button>
         <button (click)="resend()" id="resendbynstyle" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">Resend Code</button>
       </div>
   </div>
