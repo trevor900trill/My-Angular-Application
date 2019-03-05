@@ -1,0 +1,74 @@
+/*DONT FORGET TO ADD THE MEDIA QUERIES LATER OR SHALL WE DO IT NOW OK*/
+.navbarcont{
+  margin-top: 0px;
+  background-color: inherit;
+  width:1299px;
+  position:fixed;
+  height: 70px;
+  display: flex;
+  box-shadow: 0px 0px .2px black;
+  -webkit-box-shadow: 0px 0px .2px black;
+  -moz-box-shadow: 0px 0px .2px black;
+  -ms-box-shadow: 0px 0px .2px black;
+  -o-box-shadow: 0px 0px .2px black;
+}
+.search-bar{
+  margin-top: 5px;
+  width:33.3%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
+  background-color: inherit;
+}
+#search{
+  width: 440px;
+  height: 30px;
+  border: solid;
+  border-color: #ff8011;
+}
+.barsIconbox{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10px;
+  margin-top: 5px;
+  background-color: inherit;
+  width:33.3%;
+  color: #ff8011;
+  padding: 10px;
+}
+.thirdcol{
+  width:33.3%;
+  background-color: inherit;
+
+}
+#iconbar:hover{
+  transform: scale(1.2);
+}
+#iconbar:active{
+  transform: scale(0.8);
+  color: #ff9321;
+}
+#iconbar{
+  font-size: 40px;
+  transition: transform .2s;
+}
+/*MEDIA QUERIES*/
+/*GALAXY S5*/
+@media only screen and (max-width:360px) and (max-height : 640px) {
+  .navbarcont{
+    margin-top: 0px;
+    background-color: inherit;
+    width:360px;
+    height: 70px;
+    box-shadow: 0px 0px .9px black;
+    -webkit-box-shadow: 0px 0px .9px black;
+    -moz-box-shadow: 0px 0px .9px black;
+    -ms-box-shadow: 0px 0px .9px black;
+    -o-box-shadow: 0px 0px .9px black;
+  }
+  p{
+    font-size: 20px;
+  }
+}

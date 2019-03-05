@@ -21,128 +21,6 @@ li{
   color:#ff8011;
   font-size: 18px;
 }
-.navbar{
-  width:100%;
-  display:flex;
-  position : fixed;
-  top:0px;
-  height: 70px;
-  background-color:#46484c;
-  -ms-box-shadow: 0px 0px 5px #222223;
-  -o-box-shadow: 0px 0px 5px #222223;
-  -moz-box-shadow: 0px 0px 5px #222223;
-  -webkit-box-shadow: 0px 0px 5px #222223;
-  box-shadow: 0px 0px 5px #222223;
-}
-#actuallicon:hover{
-  transform:scale(1.3);
-}
-#actuallicon:active{
-  transform : scale(0.7);
-  color: #dd9311;
-}
-#actuallicon{
-  color:#ff8011;
-  font-size : 40px;
-  transition: transform .2s;
-  cursor : pointer;
-}
-.barsiconbox{
-  width:70px;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color:#46484c;
-  position:absolute;
-  top:5px;
-  left: 10px;
-}
-.navbarlogocontainer{
-  display:flex;
-  position:absolute;
-  left:90px;
-}
-.navbarlogo:hover{
-  color: #dd9311;
-}
-.navbarlogo:active{
-  color: #ff8011;
-}
-.navbarlogo{
-  font-family: 'Tangerine', cursive;
-  color:#ff8011;
-  font-size: 35px;
-}
-.videopagecontent{
-  background-color: #46484c;
-  position:relative;
-  width:100%;
-  height:100%;
-  overflow-y :auto;
-  margin-top: 160px;
-}
-.videopagecontainer{
-  background-color: #46484c;
-  width: 100%;
-  height:100%;
-  float:right;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  position:absolute;
-  right:0px;
-  overflow: hidden;
-}
-.sidebarcontainer{
-  background-color: #46484c;
-  overflow: auto;
-  height: 100%;
-}
-.sidebar{
-  z-index: 1;
-  background-color: #46484c;
-  height: 100%;
-  width: 350px;
-  position : fixed;
-  left:0px;
-  margin-top: 70px;
-  display:block;
-  -moz-box-shadow: 0px 0px 5px #222223;
-  -webkit-box-shadow: 0px 0px 5px #222223;
-  box-shadow: 0px 0px 5px #222223;
-  -webkit-animation: animateionsidebar;
-  -webkit-animation-duration: .6s;
-  -webkit-animation-timing-function: normal;
-  animation: animateionsidebar;
-  animation-duration: .6s;
-  animation-timing-function: normal;
-}
-.sidebarbuttons:hover{
-  transform : scale(1.2);
-}
-.sidebarbuttons:active{
-  transform: scale(0.7);
-  background-color: #424040;
-}
-.sidebarbuttons{
-  height: 120px;
-  width:100%;
-  display: flex;
-  background-color: #46484c;
-  justify-content: center;
-  align-items: center;
-  cursor : pointer;
-  transition : transform .2s;
-  box-shadow: 0px 0px 5px #222223;
-  -webkit-box-shadow: 0px 0px 1px #222223;
-  -moz-boxshadow:0px 0px 1px #222223 ;
-  -o-box-shadow: 0px 0px 1px #222223;
-  -ms-box-shadow: 0px 0px 1px #222223;
-}
-.sidebtntext{
-  color: #ff8011;
-}
 /*width*/
 ::-webkit-scrollbar{
   width : 5px;
@@ -159,109 +37,6 @@ li{
 ::-webkit-scrollbar-thumb:hover{
   background-color: #c4c4c4;
 }
-.videosPage{
-  width: 100%;
-  height:100%;
-  display : flex;
-  position:fixed;
-  align-items: center;
-  justify-content: center;
-  background-color:#46484c;
-  z-index:1;
-  overflow:auto;
-}
-.search-box{
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 490px;
-  width:400px;
-}
-.search{
-  width: 900px;
-}
-#searchbutton:hover{
-  background-color: #dd9311;
-}
-#searchbutton:active{
-  background-color: #ff8011;
-  transform : scale(1.3);
-}
-#searchbutton{
-  margin-left:10px;
-  color:black;
-  background-color: #ff8011;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition : transform .4s;
-}
-.sidescroll1{
-  background-color: #46484c;
-  margin-bottom:60px;
-  margin-top:50px;
-  width:100%;
-  height: 280px;
-  overflow: auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-.sidescroll2{
-  background-color: #46484c;
-  margin-bottom:60px;
-  margin-top:50px;
-  width:100%;
-  height: 280px;
-  overflow: auto;
-  display: flex;
-}
-.sidescroll3{
-  background-color: #46484c;
-  margin-bottom:60px;
-  margin-top:50px;
-  width:100%;
-  height: 280px;
-  overflow: auto;
-  display: flex;
-}
-.sidescroll4{
-  background-color: #46484c;
-  margin-bottom:60px;
-  margin-top:50px;
-  width:100%;
-  height: 280px;
-  overflow: auto;
-  display: flex;
-}
-.sidescroll5{
-  background-color: #46484c;
-  margin-bottom:100px;
-  margin-top:50px;
-  width:100%;
-  height: 280px;
-  overflow: auto;
-  display: flex;
-
-}
-.video:active{
-  background-color: blue;
- }
-.video:hover{
-  transform: scale(0.9);
-}
-.video{
-  background-color: aqua;
-  min-width: 320px;
-  height: 250px;
-  margin-left: 20px;
-  transition: transform .2s;
-}
-.labelsidescroll{
-  margin-left:20px;
-  font-size: 20px;
-  color: #ff8011;
-}
 .errorbox{
   background-color: inherit;
 }
@@ -277,6 +52,18 @@ li{
   from {left:-70px;}
   to {left:0px;}
 }
+/*Video page styling na haki sitairudia tena*/
+.videosPage{
+  width: 100%;
+  height:100%;
+  display : flex;
+  position:fixed;
+  background-color:#46484c;
+  overflow:auto;
+}
+
+
+
 /*MEDIA QUERIES GO HERE*/
 /*
 @media screen and (min-width:2560px) and (min-height:1131px){

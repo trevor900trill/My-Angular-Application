@@ -27,7 +27,6 @@ export class ConfirmComponent implements OnInit{
     if(!isloggedin)
     {
       //a user is not there
-      this.router.navigate(['']);
     }
     else
     {

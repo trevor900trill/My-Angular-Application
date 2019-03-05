@@ -13,6 +13,8 @@ import { Adress } from './ip.service';
 import { ResendService } from './resend.service';
 import { DeletionService } from './deletion.service';
 import { LoginService } from './login.service';
+import { SidebarComponent } from './sidebar.component';
+import { NavbarComponent } from './navbar.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -20,6 +22,8 @@ import { LoginService } from './login.service';
     MyPlaylistComponent,
     SignUpComponent,
     ConfirmComponent,
+    SidebarComponent,
+    NavbarComponent,
   ],
   imports: [
     BrowserModule,
