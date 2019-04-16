@@ -1,0 +1,68 @@
+.sidebarouter{
+  margin-top : 71px;
+  background-color:#46484c;
+  height: 596px;
+  width:350px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  position:fixed;
+  -webkit-animation: sidemove 1s;
+  animation: sidemove 1s;
+  box-shadow: 0px 0px .2px black;
+  -webkit-box-shadow: 0px 0px .2px black;
+  -moz-box-shadow: 0px 0px .2px black;
+  -ms-box-shadow: 0px 0px .2px black;
+  -o-box-shadow: 0px 0px .2px black;
+}
+.innersider{
+  background-color:#46484c;
+  width:100%;
+  height:100%;
+  overflow-y: auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+.notneededinner{
+  width:100%;
+  height:100%;
+  background-color:#46484c;
+}
+.sidebtns:active{
+  color: #d37400;
+}
+.sidebtns:hover{
+  transform : scale(1.1);
+  box-shadow: 0px 0px .2px #46484c;
+  -webkit-box-shadow: 0px 0px .2px #46484c;
+  -moz-box-shadow: 0px 0px .2px #46484c;
+  -ms-box-shadow: 0px 0px .2px #46484c;
+  -o-box-shadow: 0px 0px .2px #46484c;
+}
+.sidebtns{
+  display: flex;
+  color:#ff8011;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1px;
+  height:130px;
+  width:100%;
+  transition : transform .2s;
+  box-shadow: 0px 0px .2px black;
+  -webkit-box-shadow: 0px 0px .2px black;
+  -moz-box-shadow: 0px 0px .2px black;
+  -ms-box-shadow: 0px 0px .2px black;
+  -o-box-shadow: 0px 0px .2px black;
+}
+.buttontext{
+  color: inherit;
+}
+@keyframes sidemove {
+  from {left: -350px;}
+  to {left: 0px;}
+}
+@-webkit-keyframes sidemove {
+  from {left: -350px;}
+  to {left: 0px;}
+}

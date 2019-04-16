@@ -56,21 +56,19 @@ li{
 .videosPage{
   width: 100%;
   height:100%;
-  display : flex;
   position:fixed;
   background-color:#46484c;
-  overflow:auto;
 }
-
-
-
-/*MEDIA QUERIES GO HERE*/
-/*
-@media screen and (min-width:2560px) and (min-height:1131px){
-  .sidebarcontainer{
-    background-color: #46484c;
-    overflow: auto;
-    height: 680px;
-  }
+.main-body{
+  background-color:#46484c;
+  float: right;
+  margin-top : 71px;
+  height: 596px;
+  width: 100%;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
-*/
+.err{
+  display: none;
+}

@@ -29,7 +29,7 @@ export class AppComponent implements OnInit{
     else
     {
       //a user is there
-      this.router.navigate(['/videos']);
+      this.router.navigate(['/render']);
     }
   }
   public email($event){
@@ -94,7 +94,7 @@ export class AppComponent implements OnInit{
                           //email exists and the password is correct
                           this.successcomponent="";
                           this.errorcomponent="";
-                          this.router.navigate(['/videos']);
+                          this.router.navigate(['/render']);
                           this.render = true;
                           localStorage.setItem("idr" , data.id);
                         }

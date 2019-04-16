@@ -1,0 +1,31 @@
+<section [ngStyle]="renderstyle3()" class="main-body">
+  <article [ngStyle]="classico()" class="innerwatchpage">
+    <section class="firstsection">
+      <article class="ede">
+        <div class="upperpart">
+            <p>ddfs</p>
+        </div>
+        <div class="lowerpart">
+          <article class="videoplayer">
+            <canvas id="analyser_render"></canvas>
+            <div id="audio_box">
+              <article class="inner-boxaud">
+                  <input id="seek"(click)="mouse($event)" type="range" min="0" max="100" [value]="yu" step=".1">                <article class="lowersection">
+                  <section class="controls">
+                    <div cass="playorpause">
+                      <img (click)="changestateofaudio()" class="playorpauseicon" [src]="mysrc"/>
+                    </div>
+                  </section>
+                  <p class="progressdurr">{{trace}}</p>
+                </article>
+              </article>
+            </div>
+          </article>
+        </div>
+      </article>
+    </section>
+    <section class="secondsection">
+      <p>others</p>
+    </section>
+  </article>
+</section>

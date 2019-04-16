@@ -1,0 +1,88 @@
+#audio_box{
+  background:#fff;
+  float:left;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width:100%;
+  height:50%;
+}
+#analyser_render{
+  width:100%;
+  height:50%;
+  background:inherit;
+  float: left;
+}
+#seek{
+  width:100%;
+  background: linear-gradient(to top right, #ff9900 8%, #cc33ff 88%);
+}
+
+.lowersection{
+  margin-top: 1%;
+  width: 100%;
+  display: flex;
+}
+.inner-boxaud{
+  width:100%;
+}
+.videoplayer{
+  width:100%;
+  height:170px;
+  margin:0px;
+}
+.innerwatchpage{
+  width:100%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+
+}
+.controls{
+  width:auto;
+}
+.playorpause{
+  width:auto;
+  height:auto;
+}
+.playorpauseicon:hover{
+  transform: scale(1.2);
+}
+.playorpauseicon{
+  width: 40%;
+  height:auto;
+  transition: transform .2s;
+}
+.upperpart{
+  width:100%;
+  height:71.5%;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+.lowerpart{
+  width:100%;
+  height:auto;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+.ede{
+  width:100%;
+  height:100%;
+  padding:0px;
+}
+.firstsection{
+  width:80%;
+  height:100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.secondsection{
+  width:20%;
+  height:100%;
+  background-color: aqua;
+}

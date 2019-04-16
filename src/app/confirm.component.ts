@@ -31,7 +31,7 @@ export class ConfirmComponent implements OnInit{
     else
     {
       //a user is there
-      this.router.navigate(['/videos']);
+      this.router.navigate(['/render']);
     }
   }
   public confirmationemail($event){
@@ -110,7 +110,7 @@ export class ConfirmComponent implements OnInit{
           //he got the code correct
           this.errorcomponent = "";
           //GET BACK ON THIS MAYBE SEND HIM TO HIS PROFILE PAGE TO EDIT IT
-          this.router.navigate(['/videos']);
+          this.router.navigate(['/render']);
           //now we make another post request sending the answer
           //in order to get the id ili nitumiange;
           var emailcheck = sessionStorage.getItem("id");
@@ -142,7 +142,7 @@ export class ConfirmComponent implements OnInit{
                               alert("the code was correct but an error occcured and you're email was not verified you can verify it by visiting you're profile page");
                               alert("welcome to infinity realm" + data.message);
                               localStorage.setItem("idr", data.message);
-                              this.router.navigate(['/videos']);
+                              this.router.navigate(['/render']);
                               sessionStorage.removeItem("key");
                               sessionStorage.removeItem("id");
                             }
@@ -154,7 +154,7 @@ export class ConfirmComponent implements OnInit{
                               alert("success the code was correct and you're email was verified");
                               alert("welcome to infinity realm" + data.message);
                               localStorage.setItem("idr", data.message);
-                              this.router.navigate(['/videos']);
+                              this.router.navigate(['/render']);
                               sessionStorage.removeItem("key");
                               sessionStorage.removeItem("id");
                             }
@@ -165,7 +165,7 @@ export class ConfirmComponent implements OnInit{
                               this.errorcomponent = "";
                               alert("welcome to infinity realm" + data.message);
                               localStorage.setItem("idr", data.message);
-                              this.router.navigate(['/videos']);
+                              this.router.navigate(['/render']);
                               sessionStorage.removeItem("key");
                               sessionStorage.removeItem("id");
                             }

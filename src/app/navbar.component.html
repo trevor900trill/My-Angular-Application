@@ -1,14 +1,23 @@
-<div class="navbarcont">
-    <div class="barsIconbox">
-      <i id="iconbar" class="fa fa-bars"></i>
-      <div>
-
+<div class="container" id="navbarcont">
+    <div class="container" id="barsIconbox">
+      <i id="iconbar" class="fa fa-bars" (click)="rendersidebar()"></i>
+      <div class="logobox">
+          <p class="logo">Infinity Realm</p>
       </div>
     </div>
-    <div class="search-bar">
+    <div class="container" id="search-bar">
       <input id="search" required="required" type="text">
+      <i id="searchicon" class="fa fa-search"></i>
     </div>
-    <div class="thirdcol">
-        <p>something</p>
+    <div class="container" id="thirdcol">
+      <div class="posticoncontainer">
+        <div>
+          <i (click)="showpostsettings()" (mouseout)="mouseouticon()" (mouseover)="mouseovericon()" class="far fa-plus-square" id ="post"></i>
+          <div *ngIf="renderundericon === true">
+            <p class="undertext">post</p>
+          </div>
+        </div>
+      </div>
     </div>
 </div>
+<!--COME BACK TO FIX THE POST ICON AND THE TEXT UNDER IT-->

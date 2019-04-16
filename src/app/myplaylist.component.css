@@ -1,11 +1,80 @@
-.myPlaylistPage{
-  width:100%;
+.innermyplaylist{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  background-color: inherit;
+  padding:.7%;
+  overflow: auto;
+}
+.audionormpicture{
   height:100%;
+  width: auto;
+  transition: transform .2s;
+}
+.audionormpicture:hover{
+  transform: scale(1.1);
+}
+.playlistitem{
+  width: 100%;
+  height: 30%;
+  margin-top: .7%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  box-shadow: 0px 0px .6px #ff8011;
+  -webkit-box-shadow: 0px 0px .6px #ff8011;
+  -moz-box-shadow: 0px 0px .6px #ff8011;
+  -ms-box-shadow: 0px 0px .6px #ff8011;
+  -o-box-shadow: 0px 0px .6px #ff8011;
+}
+.playlistitempict{
+  background-color: #46484c;
+  height: 100%;
+  width : 20%;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: fixed;
-  color:red;
-  background-color: aqua;
-  z-index:1;
+}
+.additional{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 100%;
+  background-color: #46484c;
+  box-shadow: 0px 0px .6px #ff8011;
+  -webkit-box-shadow: 0px 0px .6px #ff8011;
+  -moz-box-shadow: 0px 0px .6px #ff8011;
+  -ms-box-shadow: 0px 0px .6px #ff8011;
+  -o-box-shadow: 0px 0px .6px #ff8011;
+}
+.audiojina{
+  color: #ff8011;
+  font-size: 20px;
+  cursor: pointer;
+}
+.actuallname{
+  width: 100%;
+  height:70%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 1%;
+  box-shadow: 0px 0px .6px #ff8011;
+  -webkit-box-shadow: 0px 0px .6px #ff8011;
+  -moz-box-shadow: 0px 0px .6px #ff8011;
+  -ms-box-shadow: 0px 0px .6px #ff8011;
+  -o-box-shadow: 0px 0px .6px #ff8011;
+}
+.audioname{
+  width : 80%;
+  height: 100%;
+  background-color: #46484c;
+  display: block;
+  padding:  1%;
+}
+.insideaudios{
+  width: 100%;
+  height: 100%;
 }

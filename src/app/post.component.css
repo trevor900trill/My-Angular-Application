@@ -1,0 +1,144 @@
+.innerpostingpage{
+  width: 100%;
+  height: 100%;
+  display:  flex;
+  overflow : auto;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: inherit;
+}
+.error{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.fileinfo1{
+  width: 20%;
+  height: 100%;
+  padding: 10px;
+  background-color: inherit;
+}
+.fileinfo2{
+  width: 60%;
+  height: 100%;
+  padding: 10px;
+  background-color: inherit;
+}
+.fileinfo3{
+  width: 20%;
+  height: 100%;
+  background-color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.textfile{
+  color : #ff8011;
+}
+.mybtninfo{
+  margin-left: 5px;
+  background-color: #ff8011;
+  padding: 2px;
+  width:30%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mybtninfo:active{
+  background-color: #ff9321;
+}
+.innerbtn{
+  color: black;
+}
+.progressbox{
+  padding: 10px;
+  background-color: inherit;
+  width: 100%;
+  min-height: 20%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.innerpostingpagetab{
+  background-color: inherit;
+  width: 70%;
+  height: auto;
+  margin-top:10px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  box-shadow: 0px 0px .6px #ff8011;
+  -webkit-box-shadow: 0px 0px .6px #ff8011;
+  -moz-box-shadow: 0px 0px .2px #ff8011;
+  -ms-box-shadow: 0px 0px .2px #ff8011;
+  -o-box-shadow: 0px 0px .2px #ff8011;
+}
+.processess{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: inherit;
+  padding:20px;
+  margin-top: 10px;
+  box-shadow: 0px 0px .6px #ff8011;
+  -webkit-box-shadow: 0px 0px .6px #ff8011;
+  -moz-box-shadow: 0px 0px .2px #ff8011;
+  -ms-box-shadow: 0px 0px .2px #ff8011;
+  -o-box-shadow: 0px 0px .2px #ff8011;
+}
+.output{
+  background-color: inherit;
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+}
+.inputuploadbox{
+  background-color: inherit;
+  width: 100%;
+  padding: 20px;
+}
+.sometext{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px .6px #ff8011;
+  -webkit-box-shadow: 0px 0px .6px #ff8011;
+  -moz-box-shadow: 0px 0px .2px #ff8011;
+  -ms-box-shadow: 0px 0px .2px #ff8011;
+  -o-box-shadow: 0px 0px .2px #ff8011;
+}
+.actualltext{
+  font-family: 'Tangerine', cursive;
+  color:#ff8011;
+  font-size: 85px;
+}
+.uploadingfiles{
+  width: 50%;
+  background-color: inherit;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 5px;
+}
+.uploadallopt{
+  background-color: inherit;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 5px;
+}
+.uploadallbtnopt:active{
+  background-color: #ff9321;
+}
+.uploadallbtnopt{
+  background-color: #ff8011;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

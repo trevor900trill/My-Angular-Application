@@ -1,75 +1,20 @@
-<div class="videosPage">
-  <!--THE SIDEBAR CONTENT-->
-  <div *ngIf = "bars === true"  class="sidebar">
-      <div class='sidebarcontainer'>
-          <div routerLink="/myplaylistgo"  class="sidebarbuttons">
-              <p class="sidebtntext">My Playlist</p>
+<section [ngStyle]="renderstyle2()" class="main-body">
+  <article class="innermyplaylist">
+    <section class="insideaudios">
+      <!--THE FOR LOOP GOES HERE-->
+      <div class="playlistitem" *ngFor ="let item of renderarray[0]">
+        <article class="playlistitempict">
+            <img class="audionormpicture" [src]="item.filepic"/>
+        </article>
+        <div class="audioname">
+          <div class="actuallname">
+            <p class="audiojina" [routerLink]="['/render/watch/',item._id]" (click)="gotofile()">{{item.originalname}}</p>
           </div>
-          <div class="sidebarbuttons">
-              <p class="sidebtntext">Weekly Podcast</p>
+          <div class="additional">
+            <p class="audiojina">additional content</p>
           </div>
-          <div class="sidebarbuttons">
-              <p class="sidebtntext">Albums</p>
-          </div>
-          <div class="sidebarbuttons">
-              <p class="sidebtntext">Singles</p>
-          </div>
-          <div class="sidebarbuttons">
-              <p class="sidebtntext">Monthly Choreography</p>
-          </div>
-          <div class="sidebarbuttons">
-              <p class="sidebtntext">Videos</p>
-          </div>
-          <div class="sidebarbuttons">
-              <p class="sidebtntext">Infinite Base</p>
-          </div>
-          <div class="sidebarbuttons">
-              <p class="sidebtntext">Infinite Charts</p>
-          </div>
-          <div class="sidebarbuttons">
-              <p class="sidebtntext">Infinite Beats</p>
-          </div>
-          <div class="sidebarbuttons">
-              <p class="sidebtntext">Artist Profile</p>
-          </div>
-          <div class="sidebarbuttons">
-              <p class="sidebtntext">Entertainment</p>
-          </div>
-          <div class="sidebarbuttons">
-              <p class="sidebtntext">Events</p>
-          </div>
-          <div class="sidebarbuttons">
-              <p class="sidebtntext">Loyalty coins</p>
-          </div>
-          <div class="sidebarbuttons">
-              <p class="sidebtntext">Support</p>
-          </div>
-          <div class="sidebarbuttons">
-              <p class="sidebtntext">About</p>
-          </div>
-          <div class="sidebarbuttons">
-              <p class="sidebtntext">Log Out</p>
-          </div>
+        </div>
       </div>
-  </div>
-  <!--THE VIDEO PAGE CONTENT-->
-  <div [ngStyle]="cssstyle"  class="videopagecontainer">
-      <div class="videopagecontent">
-
-            
-      </div>
-  </div>
-  <!--THE NAV BAR-->
-  <div class="navbar">
-    <div (click)="showbars()"  class="barsiconbox">
-        <i id="actuallicon" class = "fa fa-bars"></i>
-    </div>
-    <div class="navbarlogocontainer">
-        <h1 class="navbarlogo">Infinity Realm</h1>
-    </div>
-    <div class="search-box">
-          <input (keyup)="search($event)" class="search" required="required" name="useremail" type="text" class="form-control" id="us">
-          <button (click)="clicksearch()" id="searchbutton" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">search</button>
-    </div>
-  <div>
-</div>
+    </section>
+  </article>
+</section>

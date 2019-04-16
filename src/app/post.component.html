@@ -1,0 +1,46 @@
+<section [ngStyle]="renderstyle3()" class="main-body">
+   <article class="innerpostingpage">
+      <div class="innerpostingpagetab">
+        <div class="inputuploadbox">
+          <section class="sometext">
+            <h1 class="actualltext">Choose files to upload</h1>
+          </section>
+          <section class="error">
+            <h2 class="errortext">{{errorcomp}}</h2>
+          </section>
+          <article class="output">
+            <div class="uploadingfiles">
+              <input name="file" type="file" multiple ng2FileSelect [uploader]="uploader"/>
+            </div>
+            <div class="uploadallopt" *ngIf="uploader?.queue?.length > 1">
+              <div (click)="uploader.uploadAll()" class="uploadallbtnopt">
+                <p>upload all</p>
+              </div>
+            </div>
+          </article>
+          <!--For Loop Goes Here-->
+          <article class="processess" *ngFor="let item of uploader.queue">
+            <div class="fileinfo1">
+              <p  class="textfile">{{item.file.name}}</p>
+            </div>
+            <div class="fileinfo2">
+                <section class="progressbox">
+                  <div [ngStyle]="{'width':item.progress+'%'}" style="display:flex;justify-content: flex-start;align-items: center;background-color:#ff8011;">
+                    <p>{{item.progress}}</p>
+                  </div>
+                </section>
+            </div>
+            <div class="fileinfo3">
+              <div class="mybtninfo" (click)="item.remove()">
+                <p class="innerbtn">remove</p>
+              </div>
+              <div class="mybtninfo" (click)="item.upload()">
+                <p class="innerbtn">upload</p>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+  </article>
+</section>
